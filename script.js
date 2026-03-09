@@ -167,14 +167,14 @@ return m + ":" + (s<10?"0":"") + s
 /* SLIDESHOW */
 
 const photos=[
-  "assets/images/photoa.jpg",
-  "assets/images/photob.jpg",
-  "assets/images/photoc.jpg",
-  "assets/images/photod.jpg",
-  "assets/images/photoe.jpg",
-  "assets/images/photof.jpg",
-  "assets/images/photog.jpg",
-  "assets/images/photoh.jpg"
+ "./assets/images/photoa.jpg",
+ "./assets/images/photob.jpg",
+ "./assets/images/photoc.jpg",
+ "./assets/images/photod.jpg",
+ "./assets/images/photoe.jpg",
+ "./assets/images/photof.jpg",
+ "./assets/images/photog.jpg",
+ "./assets/images/photoh.jpg"
 ]
 
 let slideIndex=0
