@@ -1,145 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chúc Mừng Ngày 8 tháng 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Chúc Mừng Ngày 8 tháng 3</title>
 
-    <!-- Confetti CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
 
-<h1>I love you </h1>
+<h1>I love you</h1>
 
 <p>
-Dành cho một người quan trọng: <br>
+Dành cho một người quan trọng:<br>
 <strong>THƯ</strong>
 </p>
 
 <button id="music">🎵 Play Music</button>
+
 <audio id="bgMusic" loop>
-    <source src="assets/music/Cigarettes After Sex - Cry (Lyrics).mp3" type="audio/mp3">
+<source src="assets/music/Cigarettes After Sex - Cry (Lyrics).mp3" type="audio/mp3">
 </audio>
 
-<!--FLOWER SECTION -->
+<!-- FLOWER -->
 <section id="flowerSection">
-    <img id="flowerGif"
-         src="https://i.pinimg.com/originals/71/02/e1/7102e1771b31ce3665a3f15522a603b6.gif"
-         alt="Flowers for you">
-    <p class="hint">
-        Nhấn vào bông hoa.
-        WARNING: Tin Nhắn sẽ chỉ hiện lên MỘT lần
-    </p>
+<img id="flowerGif"
+src="https://i.pinimg.com/originals/71/02/e1/7102e1771b31ce3665a3f15522a603b6.gif">
+
+<p class="hint">
+Nhấn vào bông hoa.  
+WARNING: Tin Nhắn sẽ chỉ hiện lên MỘT lần
+</p>
 </section>
 
 <div class="scrollSpacer"></div>
 
-<!-- 📸 MEMORIES -->
+<!-- MEMORIES -->
 <section id="memoriesSection">
-    <h2>ABROR📸</h2>
-    <div id="slideshow">
-        <img id="slide" src="assets/images/photoa.png" alt="Memories">
-    </div>
+
+<h2>ABROR📸</h2>
+
+<div id="slideshow">
+<img id="slide" src="assets/images/photoa.png">
+</div>
+
 </section>
 
 <div class="scrollSpacer big"></div>
 
 <!-- MAP -->
 <section id="mapSection">
-    <h2>Etheral places</h2>
 
-    <div id="mapButtons">
-        <button onclick="changeMap(0)">Place 1</button>
-        <button onclick="changeMap(1)">Place 2</button>
-        <button onclick="changeMap(2)">Place 3</button>
-        <button onclick="changeMap(3)">Place 4</button>
-        <button onclick="changeMap(4)">Place 5</button>
-        <button onclick="changeMap(5)">Place 6</button>
-        <button onclick="changeMap(6)">Place 7</button>
-        <button onclick="changeMap(7)">Place 8</button>
-    </div>
+<h2>Etheral places</h2>
 
-    <iframe
-        id="mapFrame"
-        src="https://www.google.com/maps/embed?pb=!4v1767774687928!6m8!1m7!1sqjIOYIB_OujEayuPBsUXzw!2m2!1d54.10768613335556!2d159.9851103911956!3f93.44184358199071!4f36.55819411358391!5f1.1065099421335651"
-        width="100%"
-        height="450"
-        style="border:0; border-radius:16px;"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-
-    <p class="mapHint">Isn't it pretty?</p>
-</section>
-
-<!-- 💌 Appreciation Section -->
-<section id="appreciationSection">
-    <h2>Yk why I show you these mf places?</h2>
-
-    <div class="appreciationBox">
-        <p>
-            It's because you are as pretty as the colour that these places bring to de world.
-            Well, how to put it, I find those pretty, and I think you are too, as a human. You stayed with me 
-          TO THIS DAY. TO THISSS DAY.
-        </p>
-        <p>
-            Being the clearly-better friend in this friendship, I have decided to bless upon you this very blessing
-          of a gift,
-        </p>
-        <p>
-            But it hasn't been very successful. WELL- But, I shouldn't dwell on it.
-            It is..or was, your birthday, so I should make this VERYYYY unique.
-        </p>
-    </div>
-</section>
-
-
-<footer id="bottomLink">
-    <p>
-        <a href="#" id="finalGifLink">
-            <img src="https://i.pinimg.com/originals/6a/d0/7b/6ad07bc7872b7f4cafc7f14ad7638306.gif"
-                 alt="Surprise GIF"
-                 style="width: 300px; max-width: 90%; border-radius: 12px;">
-        </a>
-    </p>
-</footer>
-
-
-<!-- 💖 POPUP -->
-<div id="popupWindow">
-    <div id="popupContent">
-        <h2>Lời anh gửi tới em </h2>
-
-       <audio id="voiceNote" preload="auto">
-    <source src="assets/voice/voice.mp3" type="audio/mp3">
-       </audio>
-
-        <div class="popup-buttons">
-            <button id="playButton">Phát 💖</button>
-            <button id="surpriseBtn" disabled>Surprise 💌</button>
-            <button id="closeBtn">Đóng</button>
-        </div>
-
-        <div id="voiceProgressWrapper">
-            <div id="voiceProgressBar"></div>
-        </div>
-
-        <p id="voiceTime">0:00 / 0:00</p>
-
-        <p id="typewriter"></p>
-
-        <p id="lockedMessage">
-           Chúc em một ngày 8 tháng 3 vui vẻ, mãi xinh đẹp.
-        </p>
-    </div>
+<div id="mapButtons">
+<button onclick="changeMap(0)">Place 1</button>
+<button onclick="changeMap(1)">Place 2</button>
+<button onclick="changeMap(2)">Place 3</button>
+<button onclick="changeMap(3)">Place 4</button>
+<button onclick="changeMap(4)">Place 5</button>
+<button onclick="changeMap(5)">Place 6</button>
+<button onclick="changeMap(6)">Place 7</button>
+<button onclick="changeMap(7)">Place 8</button>
 </div>
 
-<script src="assets/effects/confetti.js"></script>
+<iframe
+id="mapFrame"
+src="https://www.google.com/maps/embed?pb=!4v1767774687928!6m8!1m7!1sqjIOYIB_OujEayuPBsUXzw!2m2!1d54.10768613335556!2d159.9851103911956!3f93.44184358199071!4f36.55819411358391!5f1.1065099421335651"
+width="100%"
+height="450"
+style="border:0;border-radius:16px;"
+loading="lazy">
+</iframe>
+
+<p class="mapHint">Isn't it pretty?</p>
+
+</section>
+</section>
+
+<footer id="bottomLink">
+
+<a href="#" id="finalGifLink">
+<img src="https://i.pinimg.com/originals/6a/d0/7b/6ad07bc7872b7f4cafc7f14ad7638306.gif"
+style="width:300px;max-width:90%;border-radius:12px;">
+</a>
+
+</footer>
+
+<!-- POPUP -->
+<div id="popupWindow">
+
+<div id="popupContent">
+
+<h2>Lời anh gửi tới em</h2>
+
+<audio id="voiceNote">
+<source src="assets/voice/voice.mp3" type="audio/mp3">
+</audio>
+
+<div class="popup-buttons">
+
+<button id="playButton">Phát 💖</button>
+<button id="surpriseBtn" disabled>Surprise 💌</button>
+<button id="closeBtn">Đóng</button>
+
+</div>
+
+<div id="voiceProgressWrapper">
+<div id="voiceProgressBar"></div>
+</div>
+
+<p id="voiceTime">0:00 / 0:00</p>
+
+<p id="typewriter"></p>
+
+<p id="lockedMessage">
+Chúc em một ngày 8 tháng 3 vui vẻ, mãi xinh đẹp.
+</p>
+
+</div>
+
+</div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
