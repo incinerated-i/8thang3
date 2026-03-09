@@ -167,31 +167,24 @@ return m + ":" + (s<10?"0":"") + s
 /* SLIDESHOW */
 
 const photos=[
-"assets/images/photoa.png",
-"assets/images/photob.png",
-"assets/images/photoc.png",
-"assets/images/photod.png",
-"assets/images/photoe.png",
-"assets/images/photof.png",
-"assets/images/photog.png",
-"assets/images/photoh.png"
+  "assets/images/photoa.png",
+  "assets/images/photob.png",
+  "assets/images/photoc.png",
+  "assets/images/photod.png",
+  "assets/images/photoe.png",
+  "assets/images/photof.png",
+  "assets/images/photog.png",
+  "assets/images/photoh.png"
 ]
 
 let slideIndex=0
-
-setInterval(()=>{
-
-slide.style.opacity=0
-
-setTimeout(()=>{
-
-slideIndex=(slideIndex+1)%photos.length
-slide.src=photos[slideIndex]
-
-slide.style.opacity=1
-
+  setInterval(()=>{
+    slide.style.opacity=0
+  setTimeout(()=>{
+    slideIndex=(slideIndex+1)%photos.length
+    slide.src=photos[slideIndex]
+    slide.style.opacity=1
 },500)
-
 },3000)
 
 /* SURPRISE */
