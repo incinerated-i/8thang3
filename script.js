@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const voiceProgressBar = document.getElementById("voiceProgressBar");
     const voiceTime = document.getElementById("voiceTime");
 
-    const Music = document.getElementById("Music");
-    const musicBtn = document.getElementById("musicBtn");
+    const bgMusic = document.getElementById("bgMusic");
+    const musicBtn = document.getElementById("music");
 
     const typewriterEl = document.getElementById("typewriter");
 
@@ -54,19 +54,18 @@ document.addEventListener("DOMContentLoaded", () => {
             voiceNote.pause();
             playButton.textContent = "Play 💖";
         }
-        if (Music.paused) {
-            Music.play().catch(() => {});
-            musicBtn.textContent = "⏸ Pause Music";
-        } else {
-            Music.pause();
-            musicBtn.textContent = "🎵 Play Music";
-        }
-    });
+        if (bgMusic.paused) {
+    bgMusic.play().catch(() => {});
+    musicBtn.textContent = "⏸ Pause Music";
+} else {
+    bgMusic.pause();
+    musicBtn.textContent = "🎵 Play Music";
+}
 
     let popupOpened = false;
 
     // --- POPUP ---
-    cakeGif.addEventListener("click", () => {
+    flowerGif.addEventListener("click", () => {
         burstConfetti();
         if (!popupOpened) {
             popupOpened = true;
